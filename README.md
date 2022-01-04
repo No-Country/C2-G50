@@ -1,3 +1,7 @@
+# C2-G50
+
+C2-G50-t - Proyecto desafio Fintech
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
