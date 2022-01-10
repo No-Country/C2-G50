@@ -1,19 +1,25 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import CoinDetailPage from "./pages/coinDetailPage";
-import MarketPage from "./pages/marketPage";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import CoinInformation from "./pages/CoinInformation";
+import Market from "./pages/Market";
 import "./App.css";
 
 
 const App = () => {
   return (
-    <div className="container">
-    <BrowserRouter>
-          <Route exact path="/" component={MarketPage} />
-          <Route path="/coins/:id" component={CoinDetailPage} />
-    </BrowserRouter>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/"  exact component={Market} />
+        <Route path="/portafolio" />
+        <Route path="/news" />
+        <Route path="/settings" />
+        <Route path="/coins/:id" component={CoinInformation}/>
+      </Switch>
+    </Router>
   );
 };
 

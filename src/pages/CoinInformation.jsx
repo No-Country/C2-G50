@@ -4,7 +4,7 @@ import HistoryChart from "../services/HistoryChart";
 import CoinData from "../services/CoinData";
 import coinGecko from "../apis/coinGecko";
 
-const CoinDetailPage = () => {
+const CoinInformation = () => {
   const { id } = useParams();
   const [coinData, setCoinData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
@@ -76,4 +76,4 @@ const CoinDetailPage = () => {
   return renderData();
 };
 
-export default CoinDetailPage;
+export default CoinInformation;

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import TableCoins from "../services/TableCoins";
 import coinGecko from "../apis/coinGecko";
+import Menu from "../components/menu/Menu";
 
-const MarketPage = () => {
+const Market = () => {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -23,20 +24,21 @@ const MarketPage = () => {
   }, []);
 
   return (
-    <div className="container">
+    <>
+      <Menu/>
       <div className="row">
         <input
           type="text"
           placeholder="Search a Coin"
-          className="form-control bg-dark text-light border-0 mt-4 text-center"
+          className="search"
           autoFocus
           onChange={(e) => setSearch(e.target.value)}
         />
 
         <TableCoins coins={coins} search={search} />
       </div>
-    </div>
+    </>
   );
 }
 
-export default MarketPage;
+export default Market;
