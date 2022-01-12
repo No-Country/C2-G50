@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import HistoryChart from "../services/HistoryChart";
-import CoinData from "../services/CoinData";
-import coinGecko from "../apis/coinGecko";
+import HistoryChart from "../components/Chart/HistoryChart";
+import CoinData from "../components/CoinData/CoinData";
+import coinGecko from "../api/coinGecko";
 
 const CoinInformation = () => {
   const { id } = useParams();

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import TableCoins from "../services/TableCoins";
-import coinGecko from "../apis/coinGecko";
+import TableCoins from "../components/CoinsTable/TableCoins";
 import Menu from "../components/menu/Menu";
+import coinGecko from "../api/coinGecko";
 
 const Market = () => {
-  const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
-
+  const [coins, setCoins] = useState([]);
+  
   const getData = async () => {
     try {
       const res = await coinGecko.get(
@@ -18,7 +18,7 @@ const Market = () => {
       console.error(error);
     }
   };
-
+  
   useEffect(() => {
     getData();
   }, []);
@@ -39,6 +39,6 @@ const Market = () => {
       </div>
     </>
   );
-}
+  }
 
 export default Market;
