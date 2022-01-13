@@ -1,4 +1,5 @@
 import React from "react";
+import './CoinData.css'
 
 const CoinData = ({ data }) => {
   const renderData = () => {

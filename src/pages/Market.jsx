@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import TableCoins from "../components/CoinsTable/TableCoins";
 import Menu from "../components/menu/Menu";
 import coinGecko from "../api/coinGecko";
+import './Market.css'
 
 const Market = () => {
   const [search, setSearch] = useState("");
@@ -26,6 +27,7 @@ const Market = () => {
   return (
     <>
       <Menu/>
+      <div className="container">
       <div className="row">
         <input
           type="text"
@@ -36,6 +38,7 @@ const Market = () => {
         />
 
         <TableCoins coins={coins} search={search} />
+      </div>
       </div>
     </>
   );

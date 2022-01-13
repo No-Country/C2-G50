@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import HistoryChart from "../components/Chart/HistoryChart";
 import CoinData from "../components/CoinData/CoinData";
 import coinGecko from "../api/coinGecko";
+import Menu from "../components/menu/Menu";
 
 const CoinInformation = () => {
   const { id } = useParams();
@@ -66,9 +67,11 @@ const CoinInformation = () => {
       return <div>Loading....</div>;
     }
     return (
+      <div>
       <div className="coinlist">
         <HistoryChart data={coinData} />
         <CoinData data={coinData.detail} />
+      </div>
       </div>
     );
   };
