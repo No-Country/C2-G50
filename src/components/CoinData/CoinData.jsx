@@ -5,45 +5,39 @@ const CoinData = ({ data }) => {
     if (data) {
       return (
         <>
-          <div>
-            <div>
-              <span>Market Cap</span>
+          {/* <hr> opcionales*/}
+          <section>
+            <div className="market-cap">
+              <h4>Market Cap</h4>
               <span>{data.market_cap}</span>
             </div>
-            
-            <div className="column">
-              <span>
-                Total Supply
-              </span>
+            <div className="total-supply">
+              <h4>Total Supply</h4>
               <span>{data.total_supply}</span>
             </div>
-          </div>
-
-          <div>
-            <div className="column">
-              <span>Volume(24H)</span>
+          </section>
+          <hr/>
+          <section>
+            <div className="volume">
+              <h4>Volume(24H)</h4>
               <span>{data.total_volume}</span>
             </div>
-            <hr />
-            <div className="column">
-              <span>high 24h</span>
+            <div className="high">
+              <h4>high 24h</h4>
               <span>{data.high_24h}</span>
             </div>
-          </div>
-
-          <div>
-            <div className="column">
-              <span>
-                Circulating Supply
-              </span>
+          </section>
+          <hr/>
+          <section>
+            <div className="circulating">
+              <h4>Circulating Supply</h4>
               <span>{data.circulating_supply}</span>
             </div>
-            <hr />
-            <div className="column">
-              <span>low 24h</span>
+            <div className="low">
+              <h4>Low 24h</h4>
               <span>{data.low_24h}</span>
             </div>
-          </div>
+          </section>
         </>
       );
     }
