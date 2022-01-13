@@ -1,5 +1,6 @@
 import React from "react";
 import CoinRow from "../CoinRow/CoinRow";
+import './TableCoins.css'
 
 const titles = ["#", "Coin", "Price (USD)", "Price Change","24h Volume", "Chart"];
 
@@ -11,7 +12,7 @@ const TableCoins = ({ coins, search }) => {
   if (!coins) return <div>no coins</div>
 
   return (
-    <>
+    <table className="table table-dark mt-4 table-hover">
       <thead>
         <tr>
           {titles.map((title, i) => (
@@ -24,7 +25,8 @@ const TableCoins = ({ coins, search }) => {
           <CoinRow key={coin.id} coin={coin} index={index + 1} />
         ))}
       </tbody>
-    </>
+
+    </table>
   );
 };
 

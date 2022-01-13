@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './CoinRow.css'
 
 const CoinRow = ({ coin, index }) => {
   return (
@@ -24,7 +25,7 @@ const CoinRow = ({ coin, index }) => {
       <td className="coin-volume"> ${coin.total_volume.toLocaleString()} </td>
       
       <td>
-        <Link to={`/coins/${coin.id}`}> see chart </Link>
+        <Link to={`/coins/${coin.id}`} className="index"> see chart </Link>
       </td>
     </tr>
   );

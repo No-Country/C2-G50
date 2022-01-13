@@ -1,13 +1,14 @@
 import React from "react";
+import './CoinData.css'
 
 const CoinData = ({ data }) => {
   const renderData = () => {
     if (data) {
       return (
-        <>
-          <div className="">
-            <div className="">
-              <span className="">Market Cap</span>
+        <div className="bg-white mt-3 p-2 rounded border row">
+          <div className="col-sm">
+            <div className="d-flex flex-column">
+              <span className="text-muted coin-data-category">Market Cap</span>
               <span>{data.market_cap}</span>
             </div>
 
@@ -46,7 +47,7 @@ const CoinData = ({ data }) => {
               <span>{data.low_24h}</span>
             </div>
           </div>
-        </>
+        </div>
 
         
       );

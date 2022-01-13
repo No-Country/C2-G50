@@ -1,0 +1,16 @@
+.index{
+    --bs-text-opacity:1;
+    color:#6c757d!important
+}
+
+.coin__img{
+    max-width:100%;
+    height:auto;
+    margin-right:1.5rem!important
+}
+
+.coin__symbol{
+    --bs-text-opacity:1;
+    color:#6c757d!important;
+    margin-left:1rem!important
+}
