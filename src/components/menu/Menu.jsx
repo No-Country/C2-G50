@@ -9,23 +9,20 @@ return (
   <>
     <header>
       <nav>
-        <button onClick={() => setOpenNav(!openNav)}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
         <ul>
           <li>
-            <Link to="/">Dashboard</Link>
+            <Link to="/"><span class="iconify" data-icon="mdi:view-dashboard"></span> Dashboard</Link>
           </li>
           <li>
-            <Link to="/portafolio">Portafolio</Link>
+            <Link to="/portafolio"><span class="iconify" data-icon="bx:bxs-wallet"></span> Portafolio</Link>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            {/* <Link to="/news"><span class="iconify" data-icon="wpf:globe-earth"></span> News</Link> */}
+            <Link to="/news"><span class="iconify" data-icon="bx:bx-world"></span> News</Link>
+
           </li>
           <li>
-            <Link to="/settings">Settings</Link>
+            <Link to="/settings"><span class="iconify" data-icon="uiw:setting"></span> Settings</Link>
           </li>
         </ul>
       </nav> 

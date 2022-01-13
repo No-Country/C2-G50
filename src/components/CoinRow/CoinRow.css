@@ -1,10 +1,16 @@
 .index{
     --bs-text-opacity:1;
-    color:#6c757d!important
+    color:#6c757d!important;
+    background-color: --primary;
+}
+
+.coin_row {
+    display: flex;
+    align-items: center;
 }
 
 .coin__img{
-    max-width:100%;
+    width: 4%;
     height:auto;
     margin-right:1.5rem!important
 }

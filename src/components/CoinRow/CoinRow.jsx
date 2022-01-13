@@ -8,7 +8,7 @@ const CoinRow = ({ coin, index }) => {
       <td className="index">{index}</td>
       
       <td className="coin">
-        <img src={coin.image} alt="criptocurrency icon" className="coin__img" style={{ width: "3%" }}/>
+        <img src={coin.image} alt="criptocurrency icon" className="coin__img"/>
         <span className="coin__name">{coin.name}</span>
         <span className="coin__symbol">({coin.symbol})</span> 
       </td>

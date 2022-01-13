@@ -28,12 +28,17 @@ nav ul li  {
     width: 100%;
 
 }
+
 nav ul li a:visited {
     color: #fff;
 }
 
 nav ul li a:hover,a.active {
-    /* background: none; */
     color: #0082e6;
     transition: all .5;
+}
+
+nav .iconify {
+    font-size: 1.5rem;
+    vertical-align: -4px;
 }
