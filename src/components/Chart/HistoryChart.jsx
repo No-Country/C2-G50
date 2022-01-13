@@ -32,7 +32,7 @@ const HistoryChart = ({ data }) => {
               label: `${detail.name} price`,
               data: determineTimeFormat(),
               backgroundColor: "transparent",
-              borderColor: "#ae2012",
+              borderColor: detail.price_change_24h < 0 ? "red" : "green",
               pointRadius: 0,
             },
           ],
@@ -48,7 +48,9 @@ const HistoryChart = ({ data }) => {
     if (detail) {
       return (
         <>
-          <p className="current_price">${detail.current_price.toFixed(2)}</p>
+          <p className={
+              detail.price_change_24h < 0 ? "negative" : "positive"
+            }>${detail.current_price.toFixed(2)}</p>
           <p className={
               detail.price_change_24h < 0 ? "negative" : "positive"
             }>

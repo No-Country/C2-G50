@@ -1,55 +1,41 @@
-.my-0{
-    margin-top:0!important;margin-bottom:0!important
+.negative{
+    --bs-text-opacity:1;
+    color:red!important;
+    margin-top:0!important;
+    margin-bottom:0!important
 }
 
-.text-danger{
-    --bs-text-opacity:1;color:rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important
+.positive{
+    --bs-text-opacity:1;
+    color:green!important;
+    margin-top:0!important;
+    margin-bottom:0!important
+}
+.coin-info{
+    --bs-bg-opacity:1;
+    background-color:white!important;
+    border:1px solid #dee2e6!important;
+    margin-top:.5rem!important;
+    border-radius:.25rem!important;
+    padding:1rem!important
+}
+.coin-info__buttons{
+    margin-top:.25rem!important;
 }
 
-.text-success{
-    --bs-text-opacity:1;color:rgba(var(--bs-success-rgb),var(--bs-text-opacity))!important
+button{
+    position:relative;
+    z-index:2;
+    color:#6c757d;
+    border-color:#6c757d;
+    padding:.25rem .5rem;
+    font-size:.875rem;
+    border-radius:.2rem
 }
-
-.bg-white{
-    --bs-bg-opacity:1;background-color:rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important
+button:hover{
+    color:#fff;background-color:#6c757d;border-color:#6c757d
 }
 
 .border{
     border:1px solid #dee2e6!important
-}
-
-.mt-2{
-    margin-top:.5rem!important
-}
-
-.rounded{
-    border-radius:.25rem!important
-}
-
-.p-3{
-    padding:1rem!important
-}
-
-.mt-1{
-    margin-top:.25rem!important
-}
-
-.btn{
-    position:relative;z-index:2
-}
-
-.btn-outline-secondary{
-    color:#6c757d;border-color:#6c757d
-}
-
-.btn-outline-secondary:hover{
-    color:#fff;background-color:#6c757d;border-color:#6c757d
-}
-
-.btn-sm{
-    padding:.25rem .5rem;font-size:.875rem;border-radius:.2rem
-}
-
-.mx-1{
-    margin-right:.25rem!important;margin-left:.25rem!important
 }
