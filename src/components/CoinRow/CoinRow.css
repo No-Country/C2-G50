@@ -1,22 +1,34 @@
-.index{
-    --bs-text-opacity:1;
-    color:#6c757d!important;
-    background-color: --primary;
+.coin__row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  vertical-align: center;
+  padding: 12px 40px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  background-color: #25262c;
+  border-radius: 10px;
 }
 
-.coin_row {
-    display: flex;
-    align-items: center;
+.coin__row .coin__row--coin,
+.coin__row--index,
+.coin__row--price,
+.positive,
+.negative,
+.coin__row--volume,
+.coin__row--chartLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.coin__img{
-    width: 4%;
-    height:auto;
-    margin-right:1.5rem!important
+.coin__row .coin__row--chartLink .chartIcon {
+  color: white;
+  width: 30px;
+  height: 30px;
 }
 
-.coin__symbol{
-    --bs-text-opacity:1;
-    color:#6c757d!important;
-    margin-left:1rem!important
+.coin__row .coin__row--chartLink .chartIcon:hover {
+  color: #0093b9;
 }
