@@ -16,3 +16,7 @@ body {
   background-color: #242529 !important;
   color: #fff;
 }
+
+.container {
+  margin-top: 70px;
+}
