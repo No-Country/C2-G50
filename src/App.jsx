@@ -8,12 +8,11 @@ import CoinInformation from "./pages/CoinInformation";
 import Market from "./pages/Market";
 import "./App.css";
 
-
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/"  exact component={Market} />
+        <Route path="/"  exact component={Dashboard} />
         <Route path="/portafolio" />
         <Route path="/news" />
         <Route path="/settings" />
@@ -21,6 +20,12 @@ const App = () => {
       </Switch>
     </Router>
   );
-};
+}
+
+const Dashboard = () => {
+  return (
+    <Market/>
+  );
+}
 
 export default App;
