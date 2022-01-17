@@ -26,17 +26,18 @@ const Market = () => {
 
   return (
     <>
-      <Menu />
-      <div className="dashboard__container row">
-        <input
-          type="text"
-          placeholder="Search a Coin"
-          className="search"
-          autoFocus
-          onChange={(e) => setSearch(e.target.value)}
-        />
-
-        <TableCoins coins={coins} search={search} />
+      <div className="container">
+        <Menu />
+        <main className="dashboard__container row">
+          <input
+            type="text"
+            placeholder="Search a Coin"
+            className="search"
+            autoFocus
+            onChange={(e) => setSearch(e.target.value)}
+          />
+          <TableCoins coins={coins} search={search} />
+        </main>
       </div>
     </>
   );
