@@ -2,11 +2,10 @@ nav {
     width: 15vw;
     display: block;
     float: left;
+    height: 100%;
 }
 
 ul {
-
-    height: 100vh;
     margin: 50% 0;
     color: #fff;
     list-style: none;
@@ -26,7 +25,14 @@ nav ul li  {
     font-size: 20px;
     text-decoration: none;
     width: 100%;
+}
 
+nav ul li:hover,nav ul a:active  {
+  background-color: #35363b;
+}
+
+nav ul li a {
+    position: fixed;
 }
 
 nav ul li a:visited {
