@@ -63,11 +63,11 @@ const HistoryChart = ({ data }) => {
   };
 
   return (
-    <main className="coin-info">
+    <section className="coin-info">
       <h3 className="coin-info__price">{renderPrice()}</h3> 
       
       <section className="coin-info__chart">
-        <canvas ref={chartRef} id="myChart" width={250} height={250}></canvas>
+        <canvas ref={chartRef} id="myChart" height={360}></canvas>
       </section>
 
       <div className="coin-info__buttons" >
@@ -75,7 +75,7 @@ const HistoryChart = ({ data }) => {
         <button onClick={() => setTimeFormat("7d")}> 7d </button>
         <button onClick={() => setTimeFormat("1y")}> 1y </button>
       </div >
-    </main>
+    </section>
   );
 };
 
