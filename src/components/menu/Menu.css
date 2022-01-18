@@ -1,8 +1,9 @@
 nav {
-    width: 15vw;
+    width: 14vw;
     display: block;
     float: left;
     height: 100%;
+    margin-left: 15px;
 }
 
 ul {
@@ -10,7 +11,6 @@ ul {
     color: #fff;
     list-style: none;
     text-align: center;
-    transition: all .5s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,30 +21,34 @@ nav ul li  {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5rem;
+    transition: all .3s;
+    height: 4rem;
+    margin-bottom: 1rem;
     font-size: 20px;
     text-decoration: none;
+    border-radius: 20px 0px 0px 20px;
     width: 100%;
 }
 
 nav ul li:hover,nav ul a:active  {
-  background-color: #35363b;
+    background-color: #35363b;
 }
 
 nav ul li a {
     position: fixed;
 }
 
-nav ul li a:visited {
+nav ul li a, nav ul a:visited{
     color: #fff;
-}
-
-nav ul li a:hover,a.active {
-    color: #0082e6;
-    transition: all .5;
 }
 
 nav .iconify {
     font-size: 1.5rem;
     vertical-align: -4px;
+    transition: all .3s;
+}
+
+nav ul li a:hover > .iconify{
+    color: #0082e6;
+    transform: scale(1.2);
 }
