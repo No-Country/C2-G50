@@ -9,7 +9,9 @@
 :root {
   font-family: "Overpass", sans-serif;
   --primary: #35363b;
-  --secondary: #00bdee;
+  --secondary: #0082e6;
+  --positive: #38b000;
+  --negative: #bf0603;
 }
 
 body {
@@ -19,4 +21,12 @@ body {
 
 .container {
   margin-top: 70px;
+}
+
+.dashboard__container {
+  margin-top: 80px;
+  background-color: #35363b;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
