@@ -67,11 +67,12 @@ const CoinInformation = () => {
       return <div>Loading....</div>;
     }
     return (
-      <div>
-      <div className="coinlist">
-        <HistoryChart data={coinData} />
-        <CoinData data={coinData.detail} />
-      </div>
+      <div className="container">
+        <Menu/>
+        <main className="coinlist dashboard__container">
+          <HistoryChart data={coinData} />
+          <CoinData data={coinData.detail} />
+        </main>
       </div>
     );
   };
