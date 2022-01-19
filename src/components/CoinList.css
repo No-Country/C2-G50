@@ -1,0 +1,15 @@
+.coinlist-image {
+    width: 50px;
+}
+  
+.coinlist-item {
+    display: flex;
+}
+
+.list-group{
+    border-top:inherit;border-bottom:inherit
+}
+
+.mt-2{
+    margin-top:.5rem!important
+}

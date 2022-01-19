@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import HistoryChart from "../components/Chart/HistoryChart";
 import CoinData from "../components/CoinData/CoinData";
+import CoinDescription from "../components/CoinData/CoinDescription";
 import coinGecko from "../api/coinGecko";
 import Menu from "../components/menu/Menu";
 
@@ -22,7 +23,7 @@ const CoinInformation = () => {
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
-      const [day, week, year, detail] = await Promise.all([
+      const [day, week, year, detail, description] = await Promise.all([
         coinGecko.get(`/coins/${id}/market_chart/`, {
           params: {
             vs_currency: "usd",
@@ -47,6 +48,7 @@ const CoinInformation = () => {
             ids: id,
           },
         }),
+        coinGecko.get(`/coins/${id}/`),
       ]);
       console.log(day);
 
@@ -55,6 +57,7 @@ const CoinInformation = () => {
         week: formatData(week.data.prices),
         year: formatData(year.data.prices),
         detail: detail.data[0],
+        description: description.data.description
       });
       setIsLoading(false);
     };
@@ -71,6 +74,7 @@ const CoinInformation = () => {
       <div className="coinlist">
         <HistoryChart data={coinData} />
         <CoinData data={coinData.detail} />
+        <CoinDescription data={coinData.description} />
       </div>
       </div>
     );
