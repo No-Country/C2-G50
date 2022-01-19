@@ -14,9 +14,9 @@
 .coin-info{
     --bs-bg-opacity:1;
     background-color:transparent;
-    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
-        -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
-        -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+        -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
     margin-top: 8px;
     border-radius: 10px;
     padding: 10px;
