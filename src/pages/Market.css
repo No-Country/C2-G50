@@ -1,14 +1,6 @@
-.dashboard__container {
-  margin-top: 80px;
-  background-color: #35363b;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
 .dashboard__container input {
-  background-color: #676970;
-  color: white;
+  background-color: var(--primary2);
+  color: #fff;
   width: 500px;
   height: 40px;
   font-family: "Roboto", sans-serif;
@@ -23,4 +15,15 @@
 .dashboard__container input::placeholder {
   color: #f3f3f3;
   opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+  background: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+  padding: 10px
 }

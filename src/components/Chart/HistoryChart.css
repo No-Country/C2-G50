@@ -1,43 +1,43 @@
 .negative{
     --bs-text-opacity:1;
-    color:red!important;
-    margin-top:0!important;
-    margin-bottom:0!important
+    color: var(--negative);
+    margin-top:0;
+    margin-bottom:0;
 }
 
 .positive{
     --bs-text-opacity:1;
-    color:green!important;
-    margin-top:0!important;
-    margin-bottom:0!important
+    color: var(--positive);
+    margin-top:0;
+    margin-bottom:0;
 }
 .coin-info{
     --bs-bg-opacity:1;
-    background-color:transparent!important;
-    border:1px solid #dee2e6!important;
-    margin-top:.5rem!important;
-    border-radius:.25rem!important;
-    padding:1rem!important
+    background-color:transparent;
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+        -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+        -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .coin-info__buttons{
-    margin-top:.25rem!important;
+    margin-top: 5px;
 }
 
 button{
     position:relative;
     z-index:2;
-    color:#6c757d;
-    border-color:#6c757d;
-    padding:.25rem .5rem;
-    font-size:.875rem;
-    border-radius:.2rem
+    color:var(--primary2);
+    background: none;
+    border: none;
+    margin: 0 5px;
+    padding:4px 8px;
+    transition: all .3s;
+    border-radius: 5px;
+    cursor: pointer;
 }
 button:hover{
-    color:#fff;
-    background-color:#6c757d;
-    border-color:#6c757d
-}
-
-.border{
-    border:1px solid #dee2e6!important
+    color: #ffff;
+    background-color: var(--primary2);
 }

@@ -16,8 +16,6 @@ const TableCoins = ({ coins, search }) => {
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  console.log(filteredCoins);
-
   if (!coins) return <div>no coins</div>;
 
   return (

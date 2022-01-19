@@ -7,14 +7,9 @@ const CoinRow = ({ coin, index }) => {
     <section className="coin__row">
       <div className="coin__row--index">{index}</div>
       <div className="coin__row--coin">
-        <img
-          src={coin.image}
-          alt="criptocurrency icon"
-          className="coin__img"
-          style={{ width: "10%" }}
-        />
+        <img src={coin.image} alt="criptocurrency icon" className="coin__img" />
         <span className="coin__name">{coin.name}</span>
-        <span className="coin__symbol">({coin.symbol})</span>
+        <span className="coin__symbol">({coin.symbol.toUpperCase()})</span>
       </div>
       <div className="coin__row--price">
         ${coin.current_price.toLocaleString()}
@@ -24,7 +19,7 @@ const CoinRow = ({ coin, index }) => {
           coin.price_change_percentage_24h > 0 ? "positive" : "negative"
         }
       >
-        {coin.price_change_percentage_24h}
+        {coin.price_change_percentage_24h.toFixed(2)}%
       </div>
       <div className="coin__row--volume">
         ${coin.total_volume.toLocaleString()}

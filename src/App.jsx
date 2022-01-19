@@ -15,7 +15,7 @@ const App = () => {
     <WatchListContextProvider>
     <Router>
       <Switch>
-        <Route path="/"  exact component={Market} />
+        <Route path="/"  exact component={Dashboard} />
         <Route exact path="/portafolio"  component={Portafolio}/>
         <Route path="/news" />
         <Route path="/settings" />
@@ -24,6 +24,12 @@ const App = () => {
     </Router>
     </WatchListContextProvider>
   );
-};
+}
+
+const Dashboard = () => {
+  return (
+    <Market/>
+  );
+}
 
 export default App;
