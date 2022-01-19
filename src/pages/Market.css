@@ -1,6 +1,6 @@
 .dashboard__container input {
-  background-color: #676970;
-  color: white;
+  background-color: var(--primary2);
+  color: #fff;
   width: 500px;
   height: 40px;
   font-family: "Roboto", sans-serif;
@@ -23,7 +23,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0082e6;
+  background: var(--secondary);
   border-radius: 4px;
   padding: 10px
 }

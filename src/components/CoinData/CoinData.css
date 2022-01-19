@@ -13,7 +13,7 @@
 .text{
     font-size: 10px;
     --bs-text-opacity:1;
-    color:#6c757d!important
+    color: var(--primary2)!important
 }
 section {
     flex:1 0 0%

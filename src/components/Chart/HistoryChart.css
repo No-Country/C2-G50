@@ -7,7 +7,7 @@
 
 .positive{
     --bs-text-opacity:1;
-    color:rgb(31, 130, 31);
+    color: var(--positive);
     margin-top:0;
     margin-bottom:0;
 }
@@ -28,7 +28,7 @@
 button{
     position:relative;
     z-index:2;
-    color:#6c757d;
+    color:var(--primary2);
     background: none;
     border: none;
     margin: 0 5px;
@@ -39,5 +39,5 @@ button{
 }
 button:hover{
     color: #ffff;
-    background-color:#6c757d;
+    background-color: var(--primary2);
 }

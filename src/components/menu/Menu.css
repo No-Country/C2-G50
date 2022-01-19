@@ -31,7 +31,7 @@ nav ul li  {
 }
 
 nav ul li:hover,nav ul a:active  {
-    background-color: #35363b;
+    background-color: var(--primary);
 }
 
 nav ul li a {
@@ -49,6 +49,6 @@ nav .iconify {
 }
 
 nav ul li a:hover > .iconify{
-    color: #0082e6;
+    color: var(--secondary);
     transform: scale(1.2);
 }

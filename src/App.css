@@ -8,14 +8,17 @@
 }
 :root {
   font-family: "Overpass", sans-serif;
+
   --primary: #35363b;
+  --primary2: #676970;
   --secondary: #0082e6;
+  --secondary2: #242529;
   --positive: #38b000;
-  --negative: #bf0603;
+  --negative: #bd0e0b;
 }
 
 body {
-  background-color: #242529 !important;
+  background-color: var(--secondary2) !important;
   color: #fff;
 }
 
