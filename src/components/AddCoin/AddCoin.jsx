@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { WatchListContext } from "../context/watchListContext";
+import { WatchListContext } from "../../context/watchListContext";
 import "./AddCoin.css";
 
 const AddCoin = () => {

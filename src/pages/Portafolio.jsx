@@ -1,6 +1,6 @@
 import React from "react";
-import AddCoin from "../components/AddCoin";
-import CoinList from "../components/CoinList";
+import AddCoin from "../components/AddCoin/AddCoin";
+import CoinList from "../components/CoinList/CoinList";
 import Menu from "../components/menu/Menu";
 import "./Portafolio.css";
 
