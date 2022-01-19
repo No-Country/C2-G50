@@ -30,7 +30,7 @@ ul a {
 }
 
 ul a:hover {
-  background-color: #35363b;
+  background-color: var(--primary);
 }
 
 nav ul li {
@@ -55,12 +55,12 @@ nav ul li a {
 }
 
 .active__link {
-  color: #00bdee;
-  background-color: #35363b;
+  color: var(--primary3);
+  background-color: var(--primary);
   width: 100%;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  border-left: 6px solid #00bdee;
+  border-left: 6px solid var(--primary3);
   box-shadow: 0 4px 4px black;
 }
 

@@ -17,7 +17,6 @@ const CoinData = ({ data }) => {
               <span>{data.total_supply}</span>
             </div>
           </section>
-          <hr/>
           <section>
             <div className="data">
               <h4 className="text">Volume(24H)</h4>
@@ -28,7 +27,6 @@ const CoinData = ({ data }) => {
               <span>{data.high_24h}</span>
             </div>
           </section>
-          <hr/>
           <section>
             <div className="data">
               <h4 className="text">Circulating Supply</h4>

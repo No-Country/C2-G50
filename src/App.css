@@ -8,12 +8,18 @@
 }
 :root {
   font-family: "Overpass", sans-serif;
+
   --primary: #35363b;
-  --secondary: #00bdee;
+  --primary2: #676970;
+  --primary3: #00bdee;
+  --secondary: #0082e6;
+  --secondary2: #242529;
+  --positive: #38b000;
+  --negative: #bd0e0b;
 }
 
 body {
-  background-color: #242529 !important;
+  background-color: var(--secondary2) !important;
   color: #fff;
   margin: 0;
 }
@@ -22,16 +28,10 @@ body {
   margin-top: 70px;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f3f3f3;
-  border: 0px none #ffffff;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #00bdee;
+.dashboard__container {
+  margin-top: 80px;
+  background-color: #35363b;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,20 +1,19 @@
 .coin-data{
     --bs-bg-opacity:1;
     background-color:transparent!important;
-    color:white;
-    margin-top:1rem!important;
-    padding:.5rem!important;
-    border-radius:.25rem!important;
-    border:1px solid #dee2e6!important;
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
+        -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
+        -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px;
     --bs-gutter-x:1.5rem;
     --bs-gutter-y:0;display:flex;
-    flex-wrap:wrap;margin-top:calc(-1 * var(--bs-gutter-y));
-    margin-right:calc(-.5 * var(--bs-gutter-x));margin-left:calc(-.5 * var(--bs-gutter-x))
 }
 .text{
     font-size: 10px;
     --bs-text-opacity:1;
-    color:#6c757d!important
+    color: var(--primary2)!important
 }
 section {
     flex:1 0 0%

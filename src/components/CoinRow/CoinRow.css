@@ -6,7 +6,7 @@
   padding: 12px 40px;
   margin-bottom: 15px;
   margin-top: 5px;
-  background-color: #25262c;
+  background-color: var(--secondary2);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -31,11 +31,11 @@
 }
 
 .coin__row .coin__row--chartLink .chartIcon:hover {
-  color: #0093b9;
+  color: var(--secondary);
 }
 
 .coin__row:hover {
-  border: solid 2px #0093b9;
+  border: solid 2px var(--primary3);
 }
 
 .coin__row--coin img {
@@ -43,6 +43,6 @@
   margin-right: 10px;
 }
 .coin__row--coin .coin__symbol {
-  color: #676970;
+  color: var(--primary2);
   margin-left: 10px;
 }
