@@ -16,3 +16,14 @@
   color: #f3f3f3;
   opacity: 0.7;
 }
+
+::-webkit-scrollbar {
+  background: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0082e6;
+  border-radius: 4px;
+  padding: 10px
+}
