@@ -15,8 +15,23 @@
 body {
   background-color: #242529 !important;
   color: #fff;
+  margin: 0;
 }
 
 .container {
   margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f3f3f3;
+  border: 0px none #ffffff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #00bdee;
 }
