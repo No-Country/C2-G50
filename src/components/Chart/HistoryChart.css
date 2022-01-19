@@ -1,6 +1,6 @@
 .negative{
     --bs-text-opacity:1;
-    color:rgb(155, 0, 0);
+    color: var(--negative);
     margin-top:0;
     margin-bottom:0;
 }
