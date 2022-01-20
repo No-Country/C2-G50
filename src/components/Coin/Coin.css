@@ -16,26 +16,46 @@
     display: flex;
 }
 
-.list-group-item{border-top-width:0}
+.list-group-item{
+    border-top-width:0
+}
 
-.list-group-item-action{width:100%;color:#495057;text-align:inherit}
+.list-group-item-action{
+    width:100%;
+    color:#495057;
+    text-align:inherit
+}
 
-.d-flex{display:flex!important}
+.d-flex{
+    display:flex!important
+}
 
-.justify-content-between{justify-content:space-between!important}
+.justify-content-between{
+    justify-content:space-between!important
+}
 
-.align-items-center{align-items:center!important}
+.align-items-center{
+    align-items:center!important
+}
 
 .text-dark{
     --bs-text-opacity:1;
     color:rgba(var(33,37,41),var(--bs-text-opacity))!important
 }
 
-.text-danger{--bs-text-opacity:1;color:rgba(var(220,53,69),var(--bs-text-opacity))!important}
+.text-danger{
+    --bs-text-opacity:1;
+    color:rgba(var(220,53,69),var(--bs-text-opacity))!important
+}
 
-.text-success{--bs-text-opacity:1;color:rgba(var(25,135,84),var(--bs-text-opacity))!important}
+.text-success{
+    --bs-text-opacity:1;
+    color:rgba(var(25,135,84),var(--bs-text-opacity))!important
+}
 
-.align-middle{vertical-align:middle!important}
+.align-middle{
+    vertical-align:middle!important
+}
 
 .delete-icon {
     display: none;

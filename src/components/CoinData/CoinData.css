@@ -5,6 +5,7 @@
         -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
         -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.40);
     margin-top: 25px;
+        width:50%;
     border-radius: 10px;
     padding: 10px;
     --bs-gutter-x:1.5rem;
@@ -15,11 +16,22 @@
     --bs-text-opacity:1;
     color: var(--primary2)!important
 }
+
+.text-header{
+    font-size: 14px;
+    --bs-text-opacity:1;
+    color: var(--primary2)!important
+}
+
 section {
     flex:1 0 0%
 }
 
 .data{
     display:flex!important;
-    flex-direction:column!important
+    flex-direction:column!important;
+}
+
+.data a {
+    color: var(--primary3)!important
 }

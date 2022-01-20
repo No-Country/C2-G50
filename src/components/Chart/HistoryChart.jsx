@@ -33,8 +33,8 @@ const HistoryChart = ({ data }) => {
               data: determineTimeFormat(),
               backgroundColor: "transparent",
               borderColor: detail.price_change_24h < 0 ? "#bd0e0b" : "#38b000",
-              pointRadius: 0,
-            },
+              pointRadius: 1
+            }
           ],
         },
         options: {

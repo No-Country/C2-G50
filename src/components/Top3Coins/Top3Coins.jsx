@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Top3Coins.css";
 
 const Top3Coins = ({ coins }) => {
@@ -22,7 +23,9 @@ const Top3Coins = ({ coins }) => {
             <span className="coin__name">{coin.name}</span>
             <span className="coin__symbol">({coin.symbol.toUpperCase()})</span>
           </div>
+          <Link to={`/coins/${coin.id}`}>
           <img src={coin.image} />
+          </Link>
           <div className="coin__body">
             <span className="current__price">
               ${coin.current_price.toLocaleString()}

@@ -7,8 +7,8 @@ const CoinDescription = ({ data }) => {
       return (
         <div className="coin-data">
           <div className="data">
-              <h4 className="text">Description</h4>
-              <html>{data.en}</html>
+              <h4 className="text-header">Description</h4>
+              {data.en}
             </div>
         </div>
       );
