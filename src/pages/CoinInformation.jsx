@@ -70,7 +70,7 @@ const CoinInformation = () => {
       return <div>Loading....</div>;
     }
     return (
-      <div>
+      <div> 
       <div className="coinlist">
         <HistoryChart data={coinData} />
         <CoinData data={coinData.detail} />

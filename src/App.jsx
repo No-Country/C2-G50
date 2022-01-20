@@ -7,6 +7,7 @@ import {
 import CoinInformation from "./pages/CoinInformation";
 import Market from "./pages/Market";
 import Portafolio from "./pages/Portafolio";
+import News from "./pages/News";
 import "./App.css";
 import { WatchListContextProvider } from "./context/watchListContext";
 
@@ -16,8 +17,8 @@ const App = () => {
     <Router>
       <Switch>
         <Route path="/"  exact component={Dashboard} />
-        <Route exact path="/portafolio"  component={Portafolio}/>
-        <Route path="/news" />
+        <Route exact path="/portafolio" component={Portafolio}/>
+        <Route path="/news" component={News}/>
         <Route path="/settings" />
         <Route path="/coins/:id" component={CoinInformation}/>
       </Switch>

@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
 import { WatchListContext } from "../../context/watchListContext";
+import coinGecko from "../../api/coinGecko.js";
 import "./AddCoin.css";
 
-const AddCoin = () => {
+const AddCoin = ({ coins }) => {
   const [isActive, setIsActive] = useState(false);
   const { addCoin } = useContext(WatchListContext);
   const availableCoins = [

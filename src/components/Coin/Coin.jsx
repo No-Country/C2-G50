@@ -22,7 +22,7 @@ const Coin = ({ coin, deleteCoin }) => {
           ) : (
             <i className="fas fa-sort-up align-middle mr-1"></i>
           )}
-          {coin.price_change_percentage_24h}
+          {coin.price_change_percentage_24h}%
         </span>
         <i
           onClick={(e) => {

@@ -30,6 +30,7 @@ const CoinRow = ({ coin, index }) => {
         </Link>
       </div>
     </section>
+
   );
 };
 
