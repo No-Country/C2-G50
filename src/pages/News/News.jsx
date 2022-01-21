@@ -37,12 +37,20 @@ const News = () => {
     <>
       <div className="container">
         <Menu />
-        <div className="dashboard__container row">
-          {loading ? <h1>Loading News</h1> : <NewsTable news={news} />}
+        <div className="dashboard__container row" id="newsContainer">
+          {loading ? (
+            <h1>Loading News</h1>
+          ) : (
+            <div className="table__container">
+              <h1>Latest News</h1>
+              <NewsTable news={news} />
+            </div>
+          )}
           <div className="selfCenter standardWidth">
+            <h1>Trending on Twitter</h1>
             <TwitterTimelineEmbed
-              sourceType="list"
-              id={220100704}
+              sourceType="profile"
+              screenName="cryptofeednews"
               theme="dark"
               options={{ width: 400, height: 600 }}
             />
