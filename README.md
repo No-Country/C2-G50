@@ -1,11 +1,11 @@
 # CRIPTO DASHBOARD
 
 _Un dashboard que nos permite seguir al dia el valor de cada criptomoneda, sus valores, volumenes en determinado tiempo y su fluctuación.
-Podemos ver en mas detalle la informacion de cada moneda y como evoluciona gracias a un grafico integrado que facilita el entendimiento de su precio.
+Podemos ver en mas detalle la informacion de cada moneda y como evoluciona gracias a un grafico integrado que facilita el entendimiento de su precio._
 
-_Gracias a un portafolio integrado, podemos guardar (agregar y eliminar) monedas y compararlas entre si; podemos guardar estos datos y enviarlos a un email, ingresado por el usuario. Los datos se guardaran en un archivo excel para facilitar su manipulación.
+_Gracias a un portafolio integrado, podemos guardar (agregar y eliminar) monedas y compararlas entre si; podemos guardar estos datos y enviarlos a un email, ingresado por el usuario. Los datos se guardaran en un archivo excel para facilitar su manipulación._
 
-_Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los utimos movimientos y sucesos en el mundo de las criptomonedas.
+_Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los utimos movimientos y sucesos en el mundo de las criptomonedas._
 
 ## Tecnologias usadas:
 
