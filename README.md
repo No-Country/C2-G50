@@ -21,7 +21,7 @@ _Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los 
 
 *  **Nicolas Bosco** - *Integración y funcionamiento de la API* [nbbosco](https://github.com/nbbosco)
 *  **Martin Otermin** - *Diseño e implementación* [martinmortemin](https://github.com/martinmotermin)
-*  **Martin Meza** - *Corrección e implementación* [martinmeza0](https://github.com/martinmeza0)
+*  **Martin Meza** - *Correcciónes generales e implementación* [martinmeza0](https://github.com/martinmeza0)
 
 ## DEPLOY: 
 
