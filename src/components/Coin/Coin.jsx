@@ -4,10 +4,11 @@ import "./Coin.css";
 
 const Coin = ({ coin, deleteCoin }) => {
   return (
-    <Link to={`/coins/${coin.id}`} className="text-decoration-none my-1 coin">
       <li className="coinlist-item list-group-item list-group-item-action d-flex justify-content-between align-items-center text-dark">
+        <Link to={`/coins/${coin.id}`} className="text-decoration-none my-1 coin">
         <img className="coinlist-image" src={coin.image} alt="" />
-        <span className="text-decoration-none">{coin.current_price}</span>
+        </Link>
+        <span className="text-decoration-none">${coin.current_price}</span>
 
         <span
           className={
@@ -24,15 +25,14 @@ const Coin = ({ coin, deleteCoin }) => {
           )}
           {coin.price_change_percentage_24h}%
         </span>
-        <i
-          onClick={(e) => {
-            e.preventDefault();
-            deleteCoin(coin.id);
-          }}
-          className="delete-icon far fa-times-circle text-danger"
-        ></i>
+        <span onClick={(e) => {
+              e.preventDefault();
+              deleteCoin(coin.id);
+            }}>
+          <i className="iconify delete-icon" data-icon="mdi:close-box"></i>
+          </span>
+
       </li>
-    </Link>
   );
 };
 

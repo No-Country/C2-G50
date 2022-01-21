@@ -2,18 +2,28 @@
     text-decoration:none!important
 }
 
-.my-1{margin-top:.25rem!important;margin-bottom:.25rem!important}
+.my-1{
+    margin-top:.25rem!important;
+    margin-bottom:.25rem!important;
+}
 
-.coin:hover .delete-icon {
+.coinlist-item:hover .delete-icon {
     display: block;
 }
 
 .coinlist-image {
     width: 50px;
+    margin-right: 10px;
 }
   
 .coinlist-item {
     display: flex;
+    background-color: var(--secondary2);
+    padding: 12px 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    
 }
 
 .list-group-item{
@@ -22,7 +32,7 @@
 
 .list-group-item-action{
     width:100%;
-    color:#495057;
+    color:white;
     text-align:inherit
 }
 
@@ -38,19 +48,12 @@
     align-items:center!important
 }
 
-.text-dark{
-    --bs-text-opacity:1;
-    color:rgba(var(33,37,41),var(--bs-text-opacity))!important
-}
-
 .text-danger{
-    --bs-text-opacity:1;
-    color:rgba(var(220,53,69),var(--bs-text-opacity))!important
+    color: #bd0e0b!important
 }
 
 .text-success{
-    --bs-text-opacity:1;
-    color:rgba(var(25,135,84),var(--bs-text-opacity))!important
+    color: #38b000!important
 }
 
 .align-middle{
@@ -59,6 +62,21 @@
 
 .delete-icon {
     display: none;
-    position: absolute;
-    right: 6px;
+    position: top;
+    cursor: pointer;
+  }
+
+.mr-2{
+    margin-right:.15rem!important;
+    margin-left:.5rem!important
+}
+
+.delete-icon {
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .delete-icon:hover {
+    color: #bd0e0b;
   }
