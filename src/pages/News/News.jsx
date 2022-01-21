@@ -9,7 +9,8 @@ const News = () => {
         <Menu />
           <main className="dashboard__container selfCenter standardWidth">
             <TwitterTimelineEmbed
-              sourceType="list" id={220100704}
+              sourceType="profile" 
+              screenName="cryptofeednews"
               theme="dark"
               options={{width: 1000, height: 600}}/>
           </main>
