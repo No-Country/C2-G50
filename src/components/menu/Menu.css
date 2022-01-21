@@ -1,74 +1,58 @@
 nav {
-  position: sticky;
-  top: 70px;
-  width: 15vw;
+  width: 14vw;
   display: block;
   float: left;
   height: 100%;
+  margin-left: 15px;
+  top: 0px;
+  position: sticky;  
+
 }
 
 ul {
   margin: 50% 0;
-  margin-left: 10%;
   color: #fff;
   list-style: none;
   text-align: center;
-  transition: all 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: right;
-}
 
-ul a {
-  text-decoration: none;
-  color: #fff;
-  margin-bottom: 30px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  width: 100%;
 }
-
-ul a:hover {
-  background-color: var(--primary);
-}
-
-nav ul li {
+nav ul li  {
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  font-size: 16px;
+  transition: all .3s;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
   text-decoration: none;
+  border-radius: 20px 0px 0px 20px;
   width: 100%;
+
 }
 
-nav ul li .iconify {
-  margin-right: 10px;
-  font-size: 1.5rem;
-  vertical-align: -4px;
+nav ul li:hover,nav ul a:active  {
+  background-color: #35363b;
+  box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.40);
 }
 
-nav ul li a {
-  position: fixed;
-}
-
-.active__link {
-  color: var(--primary3);
-  background-color: var(--primary);
-  width: 100%;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-left: 6px solid var(--primary3);
-  box-shadow: 0 4px 4px black;
-}
-
-nav ul li a:visited {
+nav ul li a, 
+nav ul a:visited{
   color: #fff;
 }
 
-nav ul li a:hover,
-a.active {
-  transition: all 0.5;
+nav .iconify {
+  font-size: 1.5rem;
+  vertical-align: -4px;
+  transition: all .3s;
+}
+
+nav ul li a:hover > .iconify{
+  color: #0082e6;
+  transform: scale(1.2);
 }

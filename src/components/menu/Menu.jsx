@@ -1,39 +1,29 @@
-import React, { useState } from "react";
-import "./Menu.css";
-import { NavLink } from "react-router-dom";
+import React, {useState} from 'react';
+import './Menu.css'
+import {NavLink} from "react-router-dom";
 
 const Menu = () => {
-  const [openNav, setOpenNav] = useState(false);
+const [openNav, setOpenNav] = useState(false);
 
-  return (
-    <>
-      <nav>
-        <ul>
-          <NavLink to="/" activeClassName="active__link">
-            <li>
-              <span class="iconify" data-icon="mdi:view-dashboard"></span>
-              Dashboard
-            </li>
-          </NavLink>
-          <NavLink to="/portafolio" activeClassName="active__link">
-            <li>
-              <span class="iconify" data-icon="bx:bxs-wallet"></span> Portafolio
-            </li>
-          </NavLink>
-          <NavLink to="/news" activeClassName="active__link">
-            <li>
-              <span class="iconify" data-icon="bx:bx-world"></span> News
-            </li>
-          </NavLink>
-          <NavLink to="/settings" activeClassName="active__link">
-            <li>
-              <span class="iconify" data-icon="uiw:setting"></span> Settings
-            </li>
-          </NavLink>
-        </ul>
-      </nav>
-    </>
-  );
-};
-
+return (
+  <>
+    <nav>
+      <ul>
+        <li>
+          <NavLink to="/"><span className="iconify" data-icon="mdi:view-dashboard"></span> Dashboard</NavLink>
+        </li>
+        <li>
+          <NavLink to="/portafolio"><span className="iconify" data-icon="bx:bxs-wallet"></span> Portafolio</NavLink>
+        </li>
+        <li>
+          <NavLink to="/news"><span className="iconify" data-icon="bx:bx-world"></span> News</NavLink>
+        </li>
+        <li>
+          <NavLink to="/settings"><span className="iconify" data-icon="uiw:setting"></span> Settings</NavLink>
+        </li>
+      </ul>
+    </nav> 
+  </>
+  )
+}
 export default Menu;

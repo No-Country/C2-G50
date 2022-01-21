@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import TableCoins from "../components/CoinsTable/TableCoins";
-import Menu from "../components/menu/Menu";
-import coinGecko from "../api/coinGecko";
+import TableCoins from "../../components/CoinsTable/TableCoins";
+import Menu from "../../components/menu/Menu";
+import coinGecko from "../../api/coinGecko";
 import "./Market.css";
-import Top3Coins from "../components/Top3Coins/Top3Coins";
+import Top3Coins from "../../components/Top3Coins/Top3Coins";
 
 const Market = () => {
   const [search, setSearch] = useState("");

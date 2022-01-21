@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  color: black;
+  color: #000;
   background: var(--secondary2);
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.56);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.56);
@@ -40,7 +40,7 @@
 }
 
 .top__coin .coin__header .coin__symbol {
-  color: darkgray;
+  color: var(--secondary2);
 }
 
 .top__coin .coin__body {
