@@ -34,10 +34,6 @@
   color: var(--secondary);
 }
 
-.coin__row:hover {
-  border: solid 2px var(--primary3);
-}
-
 .coin__row--coin img {
   width: 10%;
   margin-right: 10px;

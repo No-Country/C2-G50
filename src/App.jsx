@@ -4,10 +4,10 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import CoinInformation from "./pages/CoinInformation";
-import Market from "./pages/Market";
-import Portafolio from "./pages/Portafolio";
-import News from "./pages/News";
+import CoinInformation from "./pages/CoinInformation/CoinInformation";
+import Market from "./pages/Market/Market";
+import Portafolio from "./pages/Portafolio/Portafolio";
+import News from "./pages/News/News";
 import "./App.css";
 import { WatchListContextProvider } from "./context/watchListContext";
 
