@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import Menu from "../components/menu/Menu";
-import NewsTable from "../components/NewsTable/NewsTable";
+import Menu from "../../components/menu/Menu";
+import NewsTable from "../../components/NewsTable/NewsTable";
 
 import "./News.css";
 
