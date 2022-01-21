@@ -30,9 +30,8 @@ body {
 
 .dashboard__container {
   margin-top: 80px;
-  background-color: #35363b;
+  background-color: var(--primary);
   padding: 40px;
   display: flex;
   flex-direction: column;
 }
-

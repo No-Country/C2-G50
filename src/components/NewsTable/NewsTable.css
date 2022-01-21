@@ -1,0 +1,26 @@
+.news__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.news__table td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.news__table tr:nth-child(even) {
+  background-color: var(--secondary2);
+}
+
+.news__table tr:hover {
+  background-color: var(--primary);
+}
+
+.news__table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--secondary);
+  color: white;
+}
