@@ -17,12 +17,15 @@ const Email = () => {
 
   return (
     <>
-    <form ref={form} onSubmit={sendEmail}>
+    <h3>Send analysis to your mail</h3>
+    <form enctype="multipart/form-data" method="post" ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
-      <input type="submit" value="Send" />
+      <label>Analysis</label>
+      <input type="textarea" name="message" /> 
+      <button type="submit" value="Send" >Submit </button>
     </form>
     </>
   );
