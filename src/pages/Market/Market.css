@@ -1,6 +1,6 @@
 .dashboard__container input {
   background-color: var(--primary2);
-  color: #fff;
+  color: var(--text);
   width: 50%;
   height: 40px;
   font-family: "Roboto", sans-serif;
