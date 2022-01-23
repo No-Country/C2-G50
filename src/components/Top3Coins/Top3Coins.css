@@ -1,14 +1,26 @@
+.top3 {
+  border-radius: 10px;
+  background-image: url("https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 0 100px 0;
+  padding: 20px;
+}
+
+.top__title h2 {
+  color: var(--positive);
+  text-align: right;
+}
+
+.top__title h2 .iconify { transform: scale(1.5); }
+
 .top__coins {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 10px 0 100px 0;
-  padding: 30px;
-  border-radius: 10px;
-  background-image: url("https://images.unsplash.com/photo-1560221328-12fe60f83ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 10px;
+
 }
 
 .top__coin {

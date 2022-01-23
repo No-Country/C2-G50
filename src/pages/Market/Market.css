@@ -12,6 +12,18 @@
   margin-bottom: 58px;
 }
 
+.row h2 {
+  Font-size: 2rem;
+}
+
+.row h2 .iconify {
+  margin-right: 4px;
+  transform: scale(2);
+  vertical-align: -5px;
+  transition: all 0.3s;
+}
+
+
 .dashboard__container input::placeholder {
   color: #f3f3f3;
   opacity: 0.7;
