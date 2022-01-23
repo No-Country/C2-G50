@@ -30,6 +30,7 @@ section {
 .data{
     display:flex!important;
     flex-direction:column!important;
+    color: var(--text)!important
 }
 
 .data a {

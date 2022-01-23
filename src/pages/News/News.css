@@ -1,10 +1,16 @@
 #newsContainer {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: var(--text)!important
 }
 
 .selfCenter {
   align-self: flex-start;
+}
+
+.table__scroll {
+  overflow: scroll;
+  max-height: 600px;
 }

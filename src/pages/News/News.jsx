@@ -43,7 +43,9 @@ const News = () => {
           ) : (
             <div className="table__container">
               <h1>Latest News</h1>
-              <NewsTable news={news} />
+              <div className="table__scroll">
+                <NewsTable news={news} />
+              </div>
             </div>
           )}
           <div className="selfCenter standardWidth">

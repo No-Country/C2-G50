@@ -6,6 +6,7 @@ import CoinDescription from "../../components/CoinData/CoinDescription";
 import CoinTicker from "../../components/CoinData/CoinTicker";
 import coinGecko from "../../api/coinGecko";
 import Menu from "../../components/menu/Menu";
+import "./CoinInformation.css";
 
 const CoinInformation = () => {
   const { id } = useParams();
@@ -80,7 +81,6 @@ const CoinInformation = () => {
           <CoinData data={coinData.detail} />
           <CoinTicker data={coinData.tickers} />
           <CoinDescription data={coinData.description} />
-    
         </div>
       </div>
     );

@@ -10,9 +10,14 @@ import Portafolio from "./pages/Portafolio/Portafolio";
 import News from "./pages/News/News";
 import "./App.css";
 import { WatchListContextProvider } from "./context/watchListContext";
+import useLocalStorage from 'use-local-storage'
 
 const App = () => {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
   return (
+    <div className='app' data-theme={theme}>
     <WatchListContextProvider>
     <Router>
       <Switch>
@@ -24,6 +29,7 @@ const App = () => {
       </Switch>
     </Router>
     </WatchListContextProvider>
+    </div>
   );
 }
 

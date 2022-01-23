@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { WatchListContext } from "../../context/watchListContext";
-import coinGecko from "../../api/coinGecko.js";
 import "./AddCoin.css";
 
 const AddCoin = ({ coins }) => {

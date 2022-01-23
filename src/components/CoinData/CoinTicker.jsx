@@ -8,19 +8,19 @@ const CoinTicker = ({ data }) => {
         <div className="coin-data">
           <div className="data">
             <h4 className="text-header">Markets - buy {data[1].base}</h4>
-            <a href={data[0].trade_url} target="_blank">
+            <a href={data[0].trade_url} target="_blank" rel="noopener noreferrer">
               {data[0].market.name}
             </a>
-            <a href={data[1].trade_url} target="_blank">
+            <a href={data[1].trade_url} target="_blank" rel="noopener noreferrer">
               {data[1].market.name}
             </a>
-            <a href={data[2].trade_url} target="_blank">
+            <a href={data[2].trade_url} target="_blank" rel="noopener noreferrer">
               {data[2].market.name}
             </a>
-            <a href={data[3].trade_url} target="_blank">
+            <a href={data[3].trade_url} target="_blank" rel="noopener noreferrer">
               {data[3].market.name}
             </a>
-            <a href={data[4].trade_url} target="_blank">
+            <a href={data[4].trade_url} target="_blank" rel="noopener noreferrer">
               {data[4].market.name}
             </a>
           </div>
