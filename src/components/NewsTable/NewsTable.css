@@ -7,7 +7,6 @@
 }
 .news__table td,
 th {
-  /* border: 1px solid #ddd; */
   padding: 8px;
 }
 
@@ -24,7 +23,7 @@ th {
   padding-bottom: 12px;
   text-align: left;
   background-color: var(--secondary);
-  color: white;
+  color: var(--text);
 }
 
 @media screen and (max-width: 48em) {

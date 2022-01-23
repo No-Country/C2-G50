@@ -38,6 +38,6 @@ button{
     cursor: pointer;
 }
 button:hover{
-    color: #ffff;
+    color: var(--text);
     background-color: var(--primary2);
 }

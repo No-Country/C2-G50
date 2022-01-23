@@ -6,7 +6,7 @@ nav {
   margin-left: 15px;
   top: 0px;
   position: sticky;
-  background-color: var(--secondary3) !important;
+  background-color: var(--secondary2) !important;
 }
 
 ul {
@@ -61,7 +61,7 @@ nav ul li:hover {
 }
 
 .navLink__active > .iconify {
-  color: #0082e6;
+  color: var(-secondary);
   transform: scale(1.2);
   margin-right: 5px;
   margin-bottom: 4px;
@@ -79,7 +79,7 @@ nav .iconify {
 }
 
 nav ul li a:hover > .iconify {
-  color: #0082e6;
+  color: var(-secondary);
   transform: scale(1.2);
 }
 
@@ -92,7 +92,7 @@ nav ul li a:hover > .iconify {
 
 .nav-button .iconify {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text);
 }
 
 .openNav {

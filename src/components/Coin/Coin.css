@@ -32,7 +32,7 @@
 
 .list-group-item-action{
     width:100%;
-    color:white;
+    color: var(--text);
     text-align:inherit
 }
 

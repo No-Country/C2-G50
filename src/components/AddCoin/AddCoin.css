@@ -63,7 +63,7 @@
 }
 
 .dropdown-toggle{
-    color:#fff;
+    color:var(--transparent);
     background-color:#0a58ca;
     border-color:#0a53be
 }

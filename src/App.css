@@ -9,25 +9,24 @@
 
 :root {
   font-family: "Overpass", sans-serif;
+  background: var(--secondary2) !important;
 
   --primary: #35363b;
   --primary2: #676970;
   --primary3: #00bdee;
   --secondary: #0082e6;
   --secondary2: #242529;
-  --secondary3: #242529;
   --positive: #38b000;
   --negative: #bd0e0b;
   --text: #ffffff;
 }
 
 [data-theme='light'] {
-  --primary: #ffffff;
-  --primary2: #676970;
+  --primary: #CAC9C4;
+  --primary2: #98968F;
   --primary3: #00bdee;
   --secondary: #0082e6;
-  --secondary2: #676970;
-  --secondary3: #ffffff;
+  --secondary2: #DBDAD6;
   --positive: #38b000;
   --negative: #bd0e0b;
   --text: #000000;
@@ -36,12 +35,11 @@
 body {
   background-color: var(--secondary2) !important;
   color: var(--text);
-  margin: 0;
 }
 
 .container {
-  background-color: var(--secondary3) !important;
-  margin-top: 70px;
+  background-color: var(--secondary2) !important;
+  padding-top: 70px;
 }
 
 .dashboard__container {

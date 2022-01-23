@@ -118,8 +118,7 @@ const AddCoin = () => {
       <button
         onClick={() => setIsActive(!isActive)}
         className="btn btn-primary dropdown-toggle"
-        type="button"
-      >
+        type="button">
         Add Coin
       </button>
       <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
