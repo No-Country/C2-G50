@@ -17,8 +17,8 @@ export const ExportToExcel = ({ apiData, fileName }) => {
 
   return (
     <>
-    <h3>Portafolio Excel (Refresh page before downloading)</h3>
-    <button onClick={(e) => exportToCSV(apiData, fileName)}>Export</button>
+    <h3>Portafolio Excel</h3>
+    <button onClick={(e) => {exportToCSV(apiData, fileName)}}>Export</button>
     </>
   );
 };

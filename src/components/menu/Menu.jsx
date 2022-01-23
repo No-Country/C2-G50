@@ -14,6 +14,10 @@ const Menu = () => {
     setTheme(newTheme);
   }
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <>
       <nav className='app' data-theme={theme}>
@@ -37,7 +41,7 @@ const Menu = () => {
           </li>
           <li >
               <span className="iconify" data-icon="uiw:setting"></span>
-              <button onClick={switchTheme}>
+              <button onClick={function(){ switchTheme(); refreshPage() }} >
                 {theme === 'light' ? 'Dark' : 'Light'} Theme
               </button>
           </li>
