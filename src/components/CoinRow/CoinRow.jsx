@@ -2,35 +2,43 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CoinRow.css";
 
-const CoinRow = ({ coin, index }) => {
+const CoinRow = ({ coin, index, windowWidth }) => {
   return (
-    <section className="coin__row">
-      <div className="coin__row--index">{index}</div>
-      <div className="coin__row--coin">
-        <img src={coin.image} alt="criptocurrency icon" className="coin__img" />
-        <span className="coin__name">{coin.name}</span>
-        <span className="coin__symbol">({coin.symbol.toUpperCase()})</span>
-      </div>
-      <div className="coin__row--price">
-        ${coin.current_price}
-      </div>
-      <div
+    <tr>
+      <td className="coin__row--index sticky-col sticky-first-col">
+        #{index + 1}
+      </td>
+      <td className="coin__row--coin sticky-col sticky-second-col">
+        <Link to={`/coins/${coin.id}`}>
+          <img
+            src={coin.image}
+            alt="criptocurrency icon"
+            className="coin__img"
+          />
+          {windowWidth >= 768
+            ? `${coin.name}  (${coin.symbol.toUpperCase()})`
+            : coin.symbol.toUpperCase()}
+        </Link>
+      </td>
+      <td className="coin__row--price">
+        ${coin.current_price.toLocaleString()}
+      </td>
+      <td
         className={
           coin.price_change_percentage_24h > 0 ? "positive" : "negative"
         }
       >
         {coin.price_change_percentage_24h.toFixed(2)}%
-      </div>
-      <div className="coin__row--volume">
+      </td>
+      <td className="coin__row--volume">
         ${coin.total_volume.toLocaleString()}
-      </div>
-      <div className="coin__row--chartLink">
+      </td>
+      <td>
         <Link to={`/coins/${coin.id}`}>
-          <span className="iconify chartIcon" data-icon="mdi:chart-line"></span>
+          <span className="iconify" data-icon="bx:bxs-detail"></span>Detail
         </Link>
-      </div>
-    </section>
-
+      </td>
+    </tr>
   );
 };
 
