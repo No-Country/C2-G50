@@ -28,7 +28,7 @@ const Top3Coins = ({ coins }) => {
           </Link>
           <div className="coin__body">
             <span className="current__price">
-              ${coin.current_price.toLocaleString()}
+              ${coin.current_price}
             </span>
             <span className="change24h positive">
               <span

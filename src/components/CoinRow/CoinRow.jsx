@@ -12,7 +12,7 @@ const CoinRow = ({ coin, index }) => {
         <span className="coin__symbol">({coin.symbol.toUpperCase()})</span>
       </div>
       <div className="coin__row--price">
-        ${coin.current_price.toLocaleString()}
+        ${coin.current_price}
       </div>
       <div
         className={

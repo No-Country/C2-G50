@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import coinGecko from "../api/coinGecko.js";
 import { WatchListContext } from "../context/watchListContext";
 
