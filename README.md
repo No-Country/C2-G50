@@ -11,15 +11,16 @@ _Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los 
 
 *  STACK: React - CSS
 *  [create-react-app](https://create-react-app.dev/) - Set up del proyecto 
-*  [React-router-dom](https://reactrouter.com/) - Manejo de rutas para multiples paginas
+*  [react-router-dom](https://reactrouter.com/) - Manejo de rutas para multiples paginas
 *  [axios](https://github.com/axios/axios) - manejo de Promesas HTTP client
 *  [chart.js](https://www.chartjs.org/) - grafico de las criptomonedas 
 *  [CoinGecko](https://www.coingecko.com/es/api) - API para la informacion de las criptomonedas
+*  [react-data-export](https://github.com/securedeveloper/react-data-export) - exportar datos a formato excel
 
 
 ## Roles del equipo:
 
-*  **Nicolas Bosco** - *Integración y funcionamiento de la API* [nbbosco](https://github.com/nbbosco)
+*  **Nicolas Boscoboinik** - *Integración y funcionamiento de la API* [nbbosco](https://github.com/nbbosco)
 *  **Martin Otermin** - *Diseño e implementación* [martinmortemin](https://github.com/martinmotermin)
 *  **Martin Meza** - *Correcciónes generales e implementación* [martinmeza0](https://github.com/martinmeza0)
 
