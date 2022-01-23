@@ -1,44 +1,56 @@
-.coin__row {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  text-align: center;
-  vertical-align: center;
-  padding: 12px 40px;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  background-color: var(--secondary2);
-  border-radius: 10px;
-  cursor: pointer;
+td {
+  text-align: left;
+  height: 3.5rem;
+  padding: 5px 8px;
+  vertical-align: middle;
 }
 
-.coin__row .coin__row--coin,
-.coin__row--index,
-.coin__row--price,
-.positive,
-.negative,
-.coin__row--volume,
-.coin__row--chartLink {
+td a {
+  text-decoration: none;
+  color: var(--text);
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+td img {
+  width: 1.5rem;
+  margin-right: 0.7rem;
 }
 
-.coin__row .coin__row--chartLink .chartIcon {
-  color: white;
-  width: 30px;
-  height: 30px;
+.coin__row--index {
+  width: 5rem;
 }
 
-.coin__row .coin__row--chartLink .chartIcon:hover {
-  color: var(--secondary);
+td a:hover > .iconify {
+  color: var(--primary3);
 }
 
-.coin__row--coin img {
-  width: 10%;
-  margin-right: 10px;
+td a .iconify {
+  font-size: 2.3rem;
 }
-.coin__row--coin .coin__symbol {
-  color: var(--primary2);
-  margin-left: 10px;
+
+@media screen and (max-width: 48em) {
+  .coin__row--index {
+    width: 2.5rem;
+  }
+
+  .sticky-col {
+    position: sticky;
+    background-color: var(--secondary2);
+  }
+
+  .sticky-first-col {
+    left: 0;
+    width: 3rem;
+    min-width: 3rem;
+    max-width: 3.1rem;
+  }
+
+  .sticky-second-col {
+    left: 3rem;
+    width: 6rem;
+    min-width: 4rem;
+    max-width: 6rem;
+    cursor: pointer;
+  }
 }

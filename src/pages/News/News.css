@@ -1,14 +1,15 @@
-#newsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .selfCenter {
   align-self: flex-start;
+  margin-top: 2rem;
 }
 
 .table__scroll {
   overflow: scroll;
   max-height: 600px;
+}
+
+@media screen and (max-width: 48em) {
+  .selfCenter {
+    align-self: center;
+  }
 }

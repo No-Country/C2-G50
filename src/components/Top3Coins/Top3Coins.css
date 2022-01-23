@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.top__title h2 .iconify { transform: scale(1.5); }
+.top__title h2 .iconify { transform: scale(); }
 
 .top__coins {
   display: flex;

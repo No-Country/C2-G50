@@ -19,7 +19,7 @@ const Top3Coins = ({ coins }) => {
     <>
       <header className= "top3">
         <section className="top__title"> 
-          <h2><span class="iconify"  data-icon="ic:baseline-trending-up"></span> Best rising cryptocurrency</h2>
+          <h2><span className="iconify"  data-icon="ic:baseline-trending-up"></span> Best rising cryptocurrency</h2>
         </section>
         <section className="top__coins">
           {sorted.map((coin, index) => (
@@ -37,7 +37,7 @@ const Top3Coins = ({ coins }) => {
                 </span>
                 <span className="change24h positive">
                   <span
-                    class="iconify"
+                    className="iconify"
                     data-icon="ant-design:caret-up-filled"
                   ></span>
                   {coin.price_change_percentage_24h.toFixed(2)}%

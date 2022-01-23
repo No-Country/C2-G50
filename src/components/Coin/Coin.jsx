@@ -23,11 +23,12 @@ const Coin = ({ coin, deleteCoin }) => {
           ) : (
             <i className="fas fa-sort-up align-middle mr-1"></i>
           )}
-          {coin.price_change_percentage_24h}%
+          {coin.price_change_percentage_24h.toFixed(2)}%
         </span>
         <span onClick={(e) => {
               e.preventDefault();
               deleteCoin(coin.id);
+              window.location.reload(false);
             }}>
           <i className="iconify delete-icon" data-icon="mdi:close-box"></i>
           </span>

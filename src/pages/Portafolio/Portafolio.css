@@ -3,5 +3,6 @@
     padding:.5rem!important;
     margin-top:.5rem!important;
     --bs-bg-opacity:1;
-    background-color:rgba(var(248,249,250),var(--bs-bg-opacity))!important
+    background-color:rgba(var(248,249,250),var(--bs-bg-opacity))!important;
+    color: var(--text)!important
   }
