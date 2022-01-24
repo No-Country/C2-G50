@@ -25,7 +25,7 @@
     margin-top: 5px;
 }
 
-button{
+.coin-info__button{
     position:relative;
     z-index:2;
     color:var(--primary2);
@@ -37,7 +37,7 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover{
+.coin-info__button:hover{
     color: var(--text);
     background-color: var(--primary2);
 }

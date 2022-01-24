@@ -42,7 +42,7 @@ const CoinList = () => {
     );
   };
 
-  return <div>{renderCoins()}</div>;
+  return renderCoins();
 };
 
 export default CoinList;

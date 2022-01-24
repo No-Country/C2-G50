@@ -82,8 +82,13 @@ nav ul li a:hover > .iconify {
   transform: scale(1.2);
 }
 
+nav ul li .dark-mode {
+  color: var(--text);
+}
+
 .nav-button {
   position: absolute;
+  display: none;
   width: 100vw;
   text-align: left;
   top: 0;

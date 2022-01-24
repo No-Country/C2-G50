@@ -11,7 +11,7 @@ const News = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  const [theme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const getNews = async () => {
     const options = {
@@ -42,7 +42,7 @@ const News = () => {
         <Menu />
         <div className="dashboard__container row">
           {loading ? (
-            <h1>Loading News</h1>
+            <h2>Loading News</h2>
           ) : (
             <div className="table__container">
               <h1>Latest News</h1>
@@ -54,7 +54,7 @@ const News = () => {
           )}
           <div className="selfCenter standardWidth">
             <hr />
-            <h1>Trending on Twitter</h1>
+            <h2>Trending on Twitter</h2>
             <hr />
             <TwitterTimelineEmbed
               sourceType="profile"

@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.top__title h2 .iconify { transform: scale(); }
+.top__title h2 .iconify {margin-right: 10px; }
 
 .top__coins {
   display: flex;
@@ -76,6 +76,7 @@
 }
 
 @media screen and (max-width: 62.5em) {
+  .top__title h2 {text-align: center;}
   .top__coin .coin__body {flex-direction: column;}
   .top__coin .coin__header {padding: 10px 10px 0px 10px;}
 }
@@ -85,6 +86,12 @@
     flex-direction: column;
     align-items: center;
   }
-  .top__coin {width: 40%;}
+  .top__coin {
+    width: 40vw;
+    margin-top: 15px;
+  }
+}
 
+@media screen and (max-width: 28rem) {
+  .top__coin { width: 70vw;}
 }

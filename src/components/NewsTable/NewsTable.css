@@ -28,7 +28,16 @@ th {
 
 @media screen and (max-width: 48em) {
   .news__table {
-    overflow-y: hidden;
+    width: 100vw;
     position: relative;
+  }
+  .news__table .Source {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 27em) {
+  .news__table .Country {
+    display: none;
   }
 }

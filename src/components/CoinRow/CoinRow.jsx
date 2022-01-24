@@ -35,7 +35,7 @@ const CoinRow = ({ coin, index, windowWidth }) => {
       </td>
       <td>
         <Link to={`/coins/${coin.id}`}>
-          <span className="iconify" data-icon="bx:bxs-detail"></span>Detail
+          <span className="iconify" data-icon="ic:outline-read-more"></span>Detail
         </Link>
       </td>
     </tr>

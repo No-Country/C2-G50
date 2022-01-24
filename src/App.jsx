@@ -14,7 +14,7 @@ import useLocalStorage from 'use-local-storage'
 
 const App = () => {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  const [theme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   return (
     <div className='app' data-theme={theme}>

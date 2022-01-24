@@ -71,9 +71,9 @@ const HistoryChart = ({ data }) => {
       </section>
 
       <div className="coin-info__buttons" >
-        <button onClick={() => setTimeFormat("24h")}> 24h </button>
-        <button onClick={() => setTimeFormat("7d")}> 7d </button>
-        <button onClick={() => setTimeFormat("1y")}> 1y </button>
+        <button className="coin-info__button" onClick={() => setTimeFormat("24h")}> 24h </button>
+        <button className="coin-info__button" onClick={() => setTimeFormat("7d")}> 7d </button>
+        <button className="coin-info__button" onClick={() => setTimeFormat("1y")}> 1y </button>
       </div >
     </section>
   );

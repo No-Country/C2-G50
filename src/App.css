@@ -31,7 +31,6 @@
   --text: #000000;
 }
 
-
 body {
   color: var(--text);
 }
@@ -59,6 +58,11 @@ body {
   background: var(--secondary);
   border-radius: 4px;
   padding: 10px
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 @media screen  and (max-width: 27em) {

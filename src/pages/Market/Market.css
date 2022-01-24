@@ -1,5 +1,5 @@
 .dashboard__container input {
-  background-color: var(--primary2);
+  background-color: var(--secondary2);
   color: var(--text);
   width: 50%;
   height: 40px;
@@ -9,7 +9,16 @@
   outline: none;
   border-radius: 10px;
   padding: 5px 10px;
-  margin-bottom: 58px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: all .3s;
+
+}
+
+.dashboard__container input:focus {
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0,130,230,1);
+-moz-box-shadow: 0px 0px 15px -5px rgba(0,130,230,1);
+box-shadow: 0px 0px 15px -5px rgba(0,130,230,1);
 }
 
 .row h2 {

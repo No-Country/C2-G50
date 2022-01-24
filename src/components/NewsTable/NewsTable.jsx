@@ -8,9 +8,9 @@ const NewsTable = ({ news }) => {
     <table className="news__table">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Source</th>
-          <th>Country</th>
+          <th className="Title">Title</th>
+          <th className="Source">Source</th>
+          <th className="Country">Country</th>
         </tr>
       </thead>
       <tbody>

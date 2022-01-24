@@ -1,3 +1,15 @@
 .new__row a {
   color: var(--text);
 }
+
+@media screen and (max-width: 48em) {
+  .new__source {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 27em) {
+  .news__table .new__country {
+    display: none;
+  }
+}

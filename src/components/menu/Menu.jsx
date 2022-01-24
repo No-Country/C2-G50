@@ -43,9 +43,10 @@ const Menu = () => {
             </NavLink>
           </li>
           <li >
-              <button onClick={function(){ switchTheme(); refreshPage() }} >
-                {theme === 'light' ? <span className="iconify" data-icon="bx:bxs-moon"></span> : <span className="iconify" data-icon="akar-icons:sun-fill"></span>} Theme
-              </button>
+            <button className="dark-mode" onClick={function(){ switchTheme(); refreshPage() }} >
+              {theme === 'light' ? <span className="iconify" data-icon="bx:bxs-moon"></span> : <span className="iconify" data-icon="akar-icons:sun-fill"></span>} 
+              Theme
+            </button>
           </li>
         </ul>
       </nav>
