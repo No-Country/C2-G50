@@ -8,7 +8,7 @@ const CoinDescription = ({ data }) => {
         <div className="coin-data">
           <div className="data">
               <h4 className="text-header">Description</h4>
-              <td dangerouslySetInnerHTML={{__html: data.en}} />
+              <span dangerouslySetInnerHTML={{__html: data.en}} />
             </div>
         </div>
       );

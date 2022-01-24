@@ -61,7 +61,7 @@ nav ul li:hover {
 }
 
 .navLink__active > .iconify {
-  color: var(-secondary);
+  color: var(--secondary);
   transform: scale(1.2);
   margin-right: 5px;
   margin-bottom: 4px;
@@ -79,7 +79,7 @@ nav .iconify {
 }
 
 nav ul li a:hover > .iconify {
-  color: var(-secondary);
+  color: var(--secondary);
   transform: scale(1.2);
 }
 

@@ -1,6 +1,14 @@
+h1{
+  color: var(--text);
+}
+
 .selfCenter {
   align-self: flex-start;
   margin-top: 2rem;
+}
+
+.table__container{
+  color: var(--text);
 }
 
 .table__scroll {

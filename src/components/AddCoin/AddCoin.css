@@ -1,6 +1,7 @@
 .btn{
     filter:none;
-    opacity:.65
+    opacity:.65;
+    width: 100px
 }
 
 .btn-primary{
@@ -36,7 +37,7 @@
     color:#212529;
     text-align:left;
     list-style:none;
-    background-color:#fff;
+    background-color:var(--primary2);
     background-clip:padding-box;
     border:1px solid rgba(0,0,0,.15);
     border-radius:.25rem;

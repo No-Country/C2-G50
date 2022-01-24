@@ -21,7 +21,7 @@ const CoinRow = ({ coin, index, windowWidth }) => {
         </Link>
       </td>
       <td className="coin__row--price">
-        ${coin.current_price.toLocaleString()}
+        ${coin.current_price}
       </td>
       <td
         className={

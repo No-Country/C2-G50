@@ -3,12 +3,15 @@ import axios from "axios";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Menu from "../../components/menu/Menu";
 import NewsTable from "../../components/NewsTable/NewsTable";
+import useLocalStorage from 'use-local-storage'
 
 import "./News.css";
 
 const News = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const getNews = async () => {
     const options = {
@@ -56,8 +59,8 @@ const News = () => {
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="cryptofeednews"
-              theme="dark"
-              options={{ width: 400, height: 600 }}
+              theme={theme}
+              options={{ width: 1200, height: 600 }}
             />
           </div>
         </div>

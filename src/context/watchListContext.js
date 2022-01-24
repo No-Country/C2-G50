@@ -30,6 +30,8 @@ export const WatchListContextProvider = (props) => {
       setWatchList([...watchList, coin]);
     }
   };
+  
+  // localStorage.clear();
 
   return (
     <WatchListContext.Provider value={{ watchList, deleteCoin, addCoin }}>
