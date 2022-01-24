@@ -17,7 +17,7 @@ export const ExportToExcel = ({ apiData, fileName }) => {
   };
 
   return (
-    <div class="excel">
+    <div className="excel">
     <h1>Portafolio to Excel</h1>
     <button className="btn btn-primary" onClick={(e) => {exportToCSV(apiData, fileName)}}>Export</button>
     </div>

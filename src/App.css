@@ -9,7 +9,6 @@
 
 :root {
   font-family: "Overpass", sans-serif;
-  background: var(--secondary2) !important;
 
   --primary: #35363b;
   --primary2: #676970;
@@ -32,8 +31,8 @@
   --text: #000000;
 }
 
+
 body {
-  background-color: var(--secondary2) !important;
   color: var(--text);
 }
 
@@ -60,4 +59,10 @@ body {
   background: var(--secondary);
   border-radius: 4px;
   padding: 10px
+}
+
+@media screen  and (max-width: 27em) {
+  .dashboard__container {
+    width: 100%;
+  }  
 }
