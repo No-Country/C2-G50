@@ -30,7 +30,7 @@ const CoinList = () => {
 
   const renderCoins = () => {
     if (isLoading) {
-      return <div>Loading...</div>;
+      return <h2 className="loading-icon"><span className="iconify" data-icon="eos-icons:loading"></span></h2>;
     }
 
     return (

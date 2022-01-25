@@ -5,8 +5,8 @@
   position: sticky;
   top: 0px;
 }
-.news__table td,
-th {
+
+.news__table td,th {
   padding: 8px;
 }
 

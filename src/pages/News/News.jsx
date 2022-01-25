@@ -42,20 +42,17 @@ const News = () => {
         <Menu />
         <div className="dashboard__container row">
           {loading ? (
-            <h2>Loading News</h2>
+            <h2 className="loading-icon"><span className="iconify" data-icon="eos-icons:loading"></span></h2>
           ) : (
             <div className="table__container">
-              <h1>Latest News</h1>
-              <hr />
+              <h2>Latest News</h2>
               <div className="table__scroll">
                 <NewsTable news={news} />
               </div>
             </div>
           )}
           <div className="selfCenter standardWidth">
-            <hr />
             <h2>Trending on Twitter</h2>
-            <hr />
             <TwitterTimelineEmbed
               sourceType="profile"
               screenName="cryptofeednews"

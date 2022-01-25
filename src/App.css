@@ -73,3 +73,9 @@ button {
     width: 100%;
   }  
 }
+
+/* for loading icon */
+.loading-icon {
+  font-size: 15vh;
+  text-align: center;
+}
