@@ -9,7 +9,7 @@ nav {
   background-color: var(--secondary2) !important;
 }
 
-ul {
+.nav-list {
   margin: 50% 0;
   color: var(--text) !important;
   list-style: none;
@@ -32,11 +32,11 @@ nav ul li {
   width: 100%;
 }
 
-nav ul li .iconify {
+.nav-list li .iconify {
   margin-right: 5px;
 }
 
-nav ul li:hover {
+.nav-list li:hover {
   background-color: var(--primary) !important;
   box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
@@ -66,8 +66,8 @@ nav ul li:hover {
   margin-bottom: 4px;
 }
 
-nav ul li a,
-nav ul a:visited {
+.nav-list li a,
+.nav-list a:visited {
   color: var(--text) !important;
 }
 
@@ -77,12 +77,12 @@ nav .iconify {
   transition: all 0.3s;
 }
 
-nav ul li a:hover > .iconify {
+.nav-list li a:hover > .iconify {
   color: var(--secondary);
   transform: scale(1.2);
 }
 
-nav ul li .dark-mode {
+.nav-list li .dark-mode {
   color: var(--text);
 }
 
@@ -126,7 +126,7 @@ nav ul li .dark-mode {
     left: -100%;
     transition: all .3s;
   }
-  nav ul li, .navLink__active {
+  .nav-list li, .navLink__active {
     border-radius: 10px;
   }
 }

@@ -18,17 +18,17 @@ const App = () => {
 
   return (
     <div className='app' data-theme={theme}>
-    <WatchListContextProvider>
-    <Router>
-      <Switch>
-        <Route path="/"  exact component={Dashboard} />
-        <Route exact path="/portafolio" component={Portafolio}/>
-        <Route path="/news" component={News}/>
-        <Route path="/settings" />
-        <Route path="/coins/:id" component={CoinInformation}/>
-      </Switch>
-    </Router>
-    </WatchListContextProvider>
+      <WatchListContextProvider>
+      <Router>
+        <Switch>
+          <Route path="/"  exact component={Dashboard} />
+          <Route exact path="/portafolio" component={Portafolio}/>
+          <Route path="/news" component={News}/>
+          <Route path="/settings" />
+          <Route path="/coins/:id" component={CoinInformation}/>
+        </Switch>
+      </Router>
+      </WatchListContextProvider>
     </div>
   );
 }

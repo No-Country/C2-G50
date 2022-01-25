@@ -24,7 +24,7 @@ const Menu = () => {
         <span className="iconify" data-icon="fluent:navigation-16-filled"></span>
       </button>
       <nav className={`app ${openNav ? 'openNav' : ''}`} data-theme={theme}>
-        <ul>
+        <ul className="nav-list">
           <li>
             <NavLink exact to="/" activeClassName="navLink__active">
               <span className="iconify" data-icon="mdi:view-dashboard"></span>

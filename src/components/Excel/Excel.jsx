@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import coinGecko from "../api/coinGecko.js";
-import { WatchListContext } from "../context/watchListContext";
+import coinGecko from "../../api/coinGecko.js";
+import { WatchListContext } from "../../context/watchListContext";
 
 import {ExportToExcel} from './ExcelExport'
 
@@ -23,7 +23,7 @@ function Excel() {
   }, [watchList])
 
   return (
-    <div >
+    <div>
       <ExportToExcel apiData={data} fileName={fileName} />
     </div>
   );

@@ -1,0 +1,18 @@
+.empty {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 50px
+}
+
+.empty p {font-size: 1.1rem}
+
+.empty span, .empty h2, .empty p {margin-top: 10px;}
+
+.empty .iconify {
+    opacity: 0.2;
+    font-size: 15rem;
+}

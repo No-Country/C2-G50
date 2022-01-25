@@ -1,53 +1,25 @@
-.my-1{
-    margin-top:.25rem!important;
-    margin-bottom:.25rem!important;
-}
-
-.coinlist-item:hover .delete-icon {
-    display: block;
-}
-
-.coinlist-image {
-    width: 50px;
-    margin-right: 10px;
-}
-  
-.coinlist-item {
+.coinlist-item{
+    margin-top:.25rem!;
+    margin-bottom:.25rem!;
     display: flex;
     background-color: var(--secondary2);
     padding: 12px 40px;
     margin-bottom: 10px;
     margin-top: 5px;
     border-radius: 10px;
-    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
 }
 
-.list-group-item{
-    border-top-width:0
+.coinlist-item img {
+    width: 25%;
 }
 
-.list-group-item-action{
-    width:100%;
-    color: var(--text);
-    text-align:inherit
+.coinlist-item span {
+    margin: 0 10px;
 }
-
-.d-flex{
-    display:flex!important
-}
-
-.justify-content-between{
-    justify-content:space-between!important
-}
-
-.align-items-center{
-    align-items:center!important
-}
-
-.align-middle{
-    vertical-align:middle!important
-}
-
 .coinlist-item .delete__button {
     font-size: 1.5rem;
     color: var(--text);
@@ -59,17 +31,8 @@
     transform: scale(1.5);
 }
 
-.mr-2{
-    margin-right:.15rem!important;
-    margin-left:.5rem!important
+@media screen and (max-width: 27em) {
+    .coinlist-item img {
+        width: 15vw;
+    }
 }
-
-.delete-icon {
-    color: white;
-    width: 30px;
-    height: 30px;
-  }
-  
-  .delete-icon:hover {
-    color: #bd0e0b;
-  }

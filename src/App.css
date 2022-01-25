@@ -32,11 +32,14 @@
 }
 
 body {
+  background: var(--secondary2) !important;
   color: var(--text);
 }
 
 .container {
   background-color: var(--secondary2) !important;
+  height: 100% or 100vh;
+  width: 100% or 100vw ;
   padding-top: 70px;
 }
 

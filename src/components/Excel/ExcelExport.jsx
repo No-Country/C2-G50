@@ -18,8 +18,8 @@ export const ExportToExcel = ({ apiData, fileName }) => {
 
   return (
     <div className="excel">
-    <h1>Portafolio to Excel</h1>
-    <button className="btn btn-primary" onClick={(e) => {exportToCSV(apiData, fileName)}}>Export</button>
+      <h3>Export your portafolio into a excel file:</h3>
+      <button className="btn" onClick={(e) => {exportToCSV(apiData, fileName)}}> <span className="iconify" data-icon="charm:download"></span>Export</button>
     </div>
   );
 };
