@@ -35,7 +35,7 @@ const CoinList = () => {
 
     return (
       <ul className="coinlist list-group mt-2">
-        {coins.length ? (coins.map((coin) => 
+        {(coins.length < 100 && coins.length > 0) ? (coins.map((coin) => 
           <Coin key={coin.id} coin={coin} deleteCoin={deleteCoin} />))
   : <NoCoin/>}
       </ul>

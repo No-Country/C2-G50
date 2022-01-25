@@ -67,7 +67,7 @@ const CoinInformation = () => {
     };
 
     fetchData();
-  }, []);
+  }, [id]);
 
   const renderData = () => {
     if (isLoading) {

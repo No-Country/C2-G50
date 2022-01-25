@@ -20,7 +20,7 @@ function Excel() {
           }).then(r => setData(r.data) )
     }
     fetchData()
-  }, [])
+  }, [watchList])
 
   return (
     <div >

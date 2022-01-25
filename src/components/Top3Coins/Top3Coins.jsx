@@ -29,7 +29,7 @@ const Top3Coins = ({ coins }) => {
                 <span className="coin__symbol">({coin.symbol.toUpperCase()})</span>
               </header>
               <Link to={`/coins/${coin.id}`}>
-              <img src={coin.image} />
+              <img src={coin.image} alt="coinImage" />
               </Link>
               <main className="coin__body">
                 <span className="current__price">

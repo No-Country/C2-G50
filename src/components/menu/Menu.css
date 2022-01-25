@@ -107,6 +107,10 @@ nav ul li .dark-mode {
   left: 0;
 }
 
+.dark-mode {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 68em) {
   .nav-button {
     display: block;

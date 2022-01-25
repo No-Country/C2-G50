@@ -14,12 +14,19 @@ const AddCoin = () => {
     setIsActive(false);
   };
 
+  function resetClick() {
+    window.localStorage.removeItem("watchList");
+    window.location.reload(false);
+  }
+  
   return (
     <div className="dropdown">
       <button onClick={() => setIsActive(!isActive)} className="btn btn-primary dropdown-toggle" type="button">
         Add Coin
       </button>
-
+      <button onClick={(e) => resetClick()} className="btn btn-primary dropdown-toggle" type="button">
+        Reset
+      </button>
       <div className={isActive ? "dropdown-menu show" : "dropdown-menu"}>
         {availableCoins.map((el) => {
           return (
