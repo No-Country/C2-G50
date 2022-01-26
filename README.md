@@ -24,5 +24,5 @@ _Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los 
 *  **Martin Otermin** - *Diseño e implementación* [martinmortemin](https://github.com/martinmotermin)
 *  **Martin Meza** - *Correcciónes generales e implementación* [martinmeza0](https://github.com/martinmeza0)
 
-## DEPLOY: 
-
+## LINK: 
+[Crypto Dashboard](https://cryptodashboard.vercel.app/)
