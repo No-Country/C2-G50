@@ -71,7 +71,11 @@ const CoinInformation = () => {
 
   const renderData = () => {
     if (isLoading) {
-      return <h2 className="loading-icon"><span className="iconify" data-icon="eos-icons:loading"></span></h2>;
+      return(
+        <div className="container">
+          <h2 className="loading-icon"><span className="iconify" data-icon="eos-icons:loading"></span></h2>;
+        </div>
+      ) 
     }
     return (
       <div className="container"> 

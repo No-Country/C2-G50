@@ -3,7 +3,7 @@ import coinGecko from "../../api/coinGecko.js";
 import { WatchListContext } from "../../context/watchListContext";
 import Coin from "../Coin/Coin";
 import NoCoin from "../NoCoin/NoCoin";
-
+import "./CoinList.css"
 const CoinList = () => {
   const [coins, setCoins] = useState([]);
   const { watchList, deleteCoin } = useContext(WatchListContext);
@@ -37,7 +37,9 @@ const CoinList = () => {
       <ul className="coinlist">
         {(coins.length < 100 && coins.length > 0) ? (coins.map((coin) => 
           <Coin key={coin.id} coin={coin} deleteCoin={deleteCoin} />))
-  : <NoCoin/>}
+          : 
+          <NoCoin/>
+        }
       </ul>
     );
   };
