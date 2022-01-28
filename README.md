@@ -22,7 +22,7 @@ _Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los 
 
 *  **Nicolas Boscoboinik** - *Integración y funcionamiento de la API* [nbbosco](https://github.com/nbbosco)
 *  **Martin Otermin** - *Diseño e implementación* [martinmortemin](https://github.com/martinmotermin)
-*  **Martin Meza** - *Correcciónes generales e implementación* [martinmeza0](https://github.com/martinmeza0)
+*  **Martin Meza** - *Correcciónes, implementación y deploy* [martinmeza0](https://github.com/martinmeza0)
 
 ## LINK: 
 [Crypto Dashboard](https://cryptodashboard.vercel.app/)
