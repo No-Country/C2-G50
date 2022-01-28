@@ -7,6 +7,8 @@ _Gracias a un portafolio integrado, podemos guardar (agregar y eliminar) monedas
 
 _Por ultimo cuenta con una sección de noticias para seguir el dia a dia de los utimos movimientos y sucesos en el mundo de las criptomonedas._
 
+![](https://github.com/No-Country/C2-G50/blob/main/Dashboard.jpg)
+
 ## Tecnologias usadas:
 
 *  STACK: React - CSS
